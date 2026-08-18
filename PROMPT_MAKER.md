@@ -1,6 +1,6 @@
 # PROMPT MAKER — Complete System
 
-> Generated from `/home/runner/work/PromptMaker/PromptMaker/CORE_RULES.md` and `/home/runner/work/PromptMaker/PromptMaker/style_packs/*.md` by `/home/runner/work/PromptMaker/PromptMaker/scripts/build_prompt_maker.py`.
+> Generated from `CORE_RULES.md` and `style_packs/*.md` by `scripts/build_prompt_maker.py`.
 
 Load this single file into your AI tool. Everything is here. You can switch style packs at any time by saying the pack name.
 

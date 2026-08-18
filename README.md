@@ -29,7 +29,7 @@ Source of truth lives in the modular files:
 Regenerate the shipping file with:
 
 ```bash
-python /home/runner/work/PromptMaker/PromptMaker/scripts/build_prompt_maker.py
+python scripts/build_prompt_maker.py
 ```
 
 `PROMPT_MAKER.md` is generated from those source files and should not be hand-edited.

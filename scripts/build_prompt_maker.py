@@ -28,9 +28,11 @@ def trim_example_outputs(text: str) -> str:
 
 
 def shift_heading_levels(text: str) -> str:
-    text = re.sub(r"^### ", "#### ", text, flags=re.MULTILINE)
-    text = re.sub(r"^## ", "### ", text, flags=re.MULTILINE)
-    return text
+    def replace(match: re.Match[str]) -> str:
+        hashes, title = match.groups()
+        return f"{hashes}# {title}"
+
+    return re.sub(r"^(###|##) (.+)$", replace, text, flags=re.MULTILINE)
 
 
 def build_intro(pack_names: list[str]) -> str:
@@ -39,7 +41,7 @@ def build_intro(pack_names: list[str]) -> str:
         [
             "# PROMPT MAKER — Complete System",
             "",
-            "> Generated from `/home/runner/work/PromptMaker/PromptMaker/CORE_RULES.md` and `/home/runner/work/PromptMaker/PromptMaker/style_packs/*.md` by `/home/runner/work/PromptMaker/PromptMaker/scripts/build_prompt_maker.py`.",
+            "> Generated from `CORE_RULES.md` and `style_packs/*.md` by `scripts/build_prompt_maker.py`.",
             "",
             "Load this single file into your AI tool. Everything is here. You can switch style packs at any time by saying the pack name.",
             "",
