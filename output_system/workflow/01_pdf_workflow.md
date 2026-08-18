@@ -28,9 +28,11 @@ Write your subject and configuration in any Markdown editor. Use the following t
 - Props: [optional]
 ```
 
+> Do not specify a variation level. The system always generates all three — Realistic, Stylized, and Full Crazy — from your input. You choose which one to use after seeing them.
+
 ### Step 2 — Generate Output
 
-Paste the Markdown into your preferred AI tool with the Prompt Maker system loaded. The system produces three copy-ready windows. No editing required.
+Paste the Markdown into your preferred AI tool with the Prompt Maker system loaded. The system produces three copy-ready prompt blocks. No editing required.
 
 ### Step 3 — Export to PDF
 
@@ -49,10 +51,11 @@ Export the generated output to PDF from your Markdown editor or browser. Recomme
 Load the PDF into your phone's Files app, Google Drive, or iCloud. When generating images on your phone:
 
 1. Open the PDF
-2. Find the variation you want (Realistic / Stylized / Full Crazy)
-3. Long-press to select the prompt text
-4. Copy
-5. Paste into your AI image generation app
+2. Read all three outputs — Realistic, Stylized, Full Crazy
+3. Decide which one you want
+4. Long-press to select that prompt text
+5. Copy
+6. Paste into your AI image generation app
 
 ## Format Recommendations for Phone Use
 

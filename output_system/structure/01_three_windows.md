@@ -47,6 +47,7 @@ The worker has become the desk. Skull emojis orbit them. Lens flares everywhere.
 
 - **Always three windows.** Never fewer. Never more per generation.
 - **Windows are ordered:** Realistic → Stylized → Full Crazy. Always.
+- **All three are always generated.** The user does not select a variation level as an input — they pick which output to use after seeing all three.
 - **Each window is independent.** It must work without the others.
 - **Label is not part of the prompt.** Variation level, style pack name, and subject line are display labels only — they sit above the copy block and are never inside it.
 - **The copy block contains only the image prompt.** Nothing else — no headers, no subject line, no commentary.

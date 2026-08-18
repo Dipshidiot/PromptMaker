@@ -36,13 +36,18 @@ Defines the universal physics of the system. These rules never change.
 
 ### 5. Variation Levels (Mandatory)
 
-Every prompt must generate three variations:
+Every generation always produces all three variations. The user does not select a variation level — the system generates all three from the subject and style pack, and the user picks the one they want to use after seeing them.
 
 | Variation | Description |
 |-----------|-------------|
 | **Realistic** | Camera-first. Photographic, natural, zero artistic embellishment. Could be a photograph. |
 | **Stylized** | Artist's interpretation. Style pack at full voice — visually distinct from Realistic, clearly intentional. |
 | **Full Crazy** | Reality broken. Physics gone. Subject still identifiable. Everything else is chaos. |
+
+**User flow:**
+1. User provides: style pack + subject (+ optional text config)
+2. System generates all three variations
+3. User reads the three outputs and copies the one they want
 
 The three levels must be clearly, immediately distinguishable from each other. A viewer should never confuse Realistic with Stylized, or Stylized with Full Crazy.
 

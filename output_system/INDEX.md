@@ -6,13 +6,15 @@ Full reference for Pillar 4 of the [Core Rules Document](../CORE_RULES.md). Cove
 
 ## Variation Levels
 
-Every generation produces exactly three variations. These are non-negotiable and always ordered Realistic → Stylized → Full Crazy.
+Every generation always produces all three variations. The user does not pick a variation upfront — the system generates all three automatically, and the user selects the one they want after seeing them.
 
 | # | Variation | Identity |
 |---|-----------|----------|
-| 01 | [Realistic](variations/01_realistic.md) | Grounded, photographic, natural — the style pack's most plausible interpretation |
-| 02 | [Stylized](variations/02_stylized.md) | Enhanced, expressive, artistic — the style pack at full intentional voice |
-| 03 | [Full Crazy](variations/03_full_crazy.md) | Exaggerated, viral, chaotic — maximum energy, subject still identifiable |
+| 01 | [Realistic](variations/01_realistic.md) | Camera-first, photographic — the style pack's most grounded interpretation |
+| 02 | [Stylized](variations/02_stylized.md) | Artist's interpretation — the style pack at full intentional voice |
+| 03 | [Full Crazy](variations/03_full_crazy.md) | Reality broken — physics gone, subject still identifiable, everything else is chaos |
+
+**The user inputs:** style pack + subject → **The system outputs:** all three → **The user picks:** whichever prompt they want to copy.
 
 ---
 
@@ -83,13 +85,11 @@ Every generation must satisfy ALL of the following:
 
 ---
 
-## How to Read an Output
+## How to Use an Output
 
-1. Identify the **variation level** from the window header
-2. Identify the **style pack** from the window header
-3. Find the **subject line** to confirm the prompt matches your input
-4. **Select and copy** the prompt body
-5. **Paste** into your AI image generation tool
+1. Read all three prompt blocks — Realistic, Stylized, Full Crazy
+2. Decide which energy level matches what you want
+3. Tap/select the prompt text in that block
+4. Copy
+5. Paste into your AI image generation tool
 6. Generate
-
-That's it. No interpretation required.
