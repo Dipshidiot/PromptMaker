@@ -7,3 +7,4 @@ A prompt creator for creators
 - [Core Rules Document v2.0 (PDF)](Prompt_Maker_v2_Core_Rules.pdf) — Phone‑ready PDF version. Download and load into your favourite AI tool.
 - [Style Packs Index](style_packs/INDEX.md) — 15 modular style packs ready to use.
 - [Text System Index](text_system/INDEX.md) — Full Pillar 2 reference: 5 text styles, 6 textures, 5 placements, and compatibility matrix.
+- [Output System Index](output_system/INDEX.md) — Full Pillar 4 reference: 3 variation levels, 4 output structure rules, and 2 production workflows.
