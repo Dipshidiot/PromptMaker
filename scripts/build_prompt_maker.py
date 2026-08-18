@@ -110,7 +110,7 @@ def build_chaos_section(path: Path) -> str:
 
 def main() -> None:
     pack_entries: list[tuple[int, str, str]] = []
-    for path in sorted(STYLE_PACKS_DIR.glob("[0-9][0-9]_*.md")):
+    for path in STYLE_PACKS_DIR.glob("[0-9][0-9]_*.md"):
         if path.name == CHAOS_FILE:
             continue
         text = trim_example_outputs(read(path))
