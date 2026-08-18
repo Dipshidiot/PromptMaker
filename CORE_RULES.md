@@ -1,208 +1,139 @@
-# Core Rules Document — Prompt Maker v2.0
+# Prompt Maker — Core Rules v2.0
 
-A stable, universal rule system that governs how every prompt is generated, regardless of style or subject. Text is included by default unless the user opts out.
-
----
-
-## Pillar 1 — Core Image Structure
-
-Defines the universal physics of the system. These rules never change.
-
-### 1. Subject Rules
-
-- Subject must be clear and concrete.
-- Optional setting may be included.
-- Optional mood may be included.
-- Subject must not contain style instructions.
-
-### 2. Scene Composition Rules
-
-- Foreground subject is always the focus.
-- Background environment must support the subject.
-- Props may be included if relevant.
-- Action or pose must be clearly described.
-
-### 3. Lighting Rules
-
-- Neutral baseline lighting.
-- Style packs may override lighting behavior.
-- No random lighting drift.
-
-### 4. Color Rules
-
-- Neutral baseline palette.
-- Style packs define palette behavior.
-- No uncontrolled saturation or hue shifts.
-
-### 5. Variation Levels (Mandatory)
-
-Every generation always produces all three variations. The user does not select a variation level — the system generates all three from the subject and style pack, and the user picks the one they want to use after seeing them.
-
-| Variation | Description |
-|-----------|-------------|
-| **Realistic** | Camera-first. Photographic, natural, zero artistic embellishment. Could be a photograph. |
-| **Stylized** | Artist's interpretation. Style pack at full voice — visually distinct from Realistic, clearly intentional. |
-| **Full Crazy** | Reality broken. Physics gone. Subject still identifiable. Everything else is chaos. |
-
-**User flow:**
-1. User provides: style pack + subject (+ optional text opt-out or text overrides)
-2. System generates all three variations
-3. User reads the three outputs and copies the one they want
-
-The three levels must be clearly, immediately distinguishable from each other. A viewer should never confuse Realistic with Stylized, or Stylized with Full Crazy.
+One document. Load this. Operate from this.
 
 ---
 
-## Pillar 2 — Text Styling & Placement
+## Pillar 1 — Image Structure
 
-Defines how text behaves across all styles.
+These rules never change.
 
-### Text Styling Options
+- Subject must be clear, concrete, and free of style instructions.
+- Foreground subject is always the focus; background supports it.
+- Action or pose must be described.
+- Lighting baseline: neutral — style pack overrides it.
+- Color baseline: neutral — style pack defines the palette.
+- No random drift on any dimension.
 
-- Bold Meme Block
-- Soft Wholesome
-- Chaotic Burst
-- Vintage Noir
-- Corporate Parody
+---
 
-### Text Texture Options
+## Pillar 2 — Text System
 
-- Clean
-- Grainy
-- Neon Glow
-- Chalky
-- Glossy
-- Comic Halftone
+Text is **on by default**. User must explicitly say **No Text** to disable.
 
-### Text Placement Options
+When active:
+- Caption words come from the subject prompt.
+- Text tone matches the style pack's Caption Tone.
+- No drift between variations.
 
-- Top
-- Center
-- Bottom
-- Split (top + bottom)
-- Floating (style‑dependent)
+### Text Styles
+| Style | Identity |
+|---|---|
+| Bold Meme Block | All-caps Impact, white fill, black outline |
+| Soft Wholesome | Rounded, warm, feels handwritten |
+| Chaotic Burst | Mixed fonts and angles, zine energy |
+| Vintage Noir | Condensed serif, wide tracking, melancholy |
+| Corporate Parody | Clean sans-serif applied to absurd subjects |
 
-### Text Rule
+### Text Textures
+| Texture | Identity |
+|---|---|
+| Clean | Flat digital type, no noise |
+| Grainy | Film grain, analog warmth |
+| Neon Glow | Colored bloom, text is a light source |
+| Chalky | Soft, dusty, handmade |
+| Glossy | Lacquered, premium, specular |
+| Comic Halftone | Ben-Day dot fill, retro print culture |
 
-Text is active by default unless the user explicitly asks for **No Text**.
+### Text Placements
+| Placement | Identity |
+|---|---|
+| Top | Setup, context, title |
+| Center | Dominant statement |
+| Bottom | Caption, punchline |
+| Split | Top + Bottom simultaneously — classic meme |
+| Floating | Style-dependent, in-world |
 
-- Text must match style tone.
-- Text words must be generated from the subject prompt and fit the subject.
-- Text must follow placement rules.
-- No drift.
+### Compatibility Matrix — Style × Texture
+| | Clean | Grainy | Neon Glow | Chalky | Glossy | Comic Halftone |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Bold Meme Block** | ✅ | ✅ | ⚠️ | ✅ | ✅ | ✅ |
+| **Soft Wholesome** | ✅ | ✅ | ❌ | ✅ | ⚠️ | ❌ |
+| **Chaotic Burst** | ❌ | ✅ | ✅ | ⚠️ | ❌ | ✅ |
+| **Vintage Noir** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Corporate Parody** | ✅ | ❌ | ⚠️ | ❌ | ✅ | ✅ |
 
-→ **Full reference:** [Text System Index](text_system/INDEX.md) — all text styles, textures, placements, and compatibility matrices.
+> ✅ Recommended &nbsp;&nbsp; ⚠️ Use with intention &nbsp;&nbsp; ❌ Avoid
+
+### Compatibility Matrix — Style × Placement
+| | Top | Center | Bottom | Split | Floating |
+|---|:---:|:---:|:---:|:---:|:---:|
+| **Bold Meme Block** | ✅ | ⚠️ | ✅ | ✅ | ❌ |
+| **Soft Wholesome** | ✅ | ✅ | ✅ | ⚠️ | ✅ |
+| **Chaotic Burst** | ⚠️ | ✅ | ⚠️ | ✅ | ✅ |
+| **Vintage Noir** | ✅ | ✅ | ✅ | ⚠️ | ✅ |
+| **Corporate Parody** | ✅ | ✅ | ✅ | ✅ | ❌ |
+
+### Recommended Text Style per Pack
+| Style Pack | Primary | Secondary |
+|---|---|---|
+| Meme Lord | Bold Meme Block | Chaotic Burst |
+| Neon Noir | Vintage Noir | — |
+| Ghibli Soft | Soft Wholesome | — |
+| Cyberpunk Chrome | Corporate Parody | Chaotic Burst |
+| Cosmic Horror | Vintage Noir | Chaotic Burst |
 
 ---
 
 ## Pillar 3 — Style Pack System
 
-Style packs are modular and define how a style behaves.
+Style packs are modular. Each defines: aesthetic, lighting, color, texture, motion, caption tone, and transformation rules for all three variation levels.
 
-### Style Pack Template
+**Available packs:** Meme Lord · Neon Noir · Ghibli Soft · Cyberpunk Chrome · Cosmic Horror  
+**Special mode:** [Chaos Agent](style_packs/00_chaos_agent.md) — suspends all rules, randomises everything.
 
-```
-# STYLE PACK: [Name]
-
-## Core Aesthetic
-Describe the visual identity.
-
-## Lighting Behavior
-How light behaves in this style.
-
-## Color Behavior
-Palette, saturation, contrast.
-
-## Texture Behavior
-Smooth, grainy, neon, plush, clay, etc.
-
-## Motion Behavior
-Streaks, blur, chaos, stillness.
-
-## Caption Tone
-How text should sound.
-
-## Transformation Rules
-### Realistic
-How realism behaves.
-
-### Stylized
-How stylization behaves.
-
-### Full Crazy
-How chaos behaves.
-
-## Example Outputs
-- Realistic:
-- Stylized:
-- Full Crazy:
-```
-
-→ **Full reference:** [Style Packs Index](style_packs/INDEX.md) — all 15 style packs ready to use.
+To add a new pack: copy [STYLE_PACK_TEMPLATE.md](STYLE_PACK_TEMPLATE.md), fill in all sections, drop in `style_packs/`.
 
 ---
 
-## Pillar 3 Exception — Chaos Agent Mode
+## Pillar 4 — Output Format
 
-**Chaos Agent** is a special override mode that suspends all core rules and randomly selects from every available option across every dimension: style pack, variation level, lighting, color, texture, motion, text style, text texture, and text placement.
+### Variation Levels (always all three — user picks after seeing them)
 
-To activate: say **"Chaos Agent"** instead of selecting a style pack. No further configuration is needed or accepted.
+| Variation | Description |
+|---|---|
+| **Realistic** | Photographic. Natural. Zero embellishment. Could be a photo. |
+| **Stylized** | Style pack at full intentional voice. Clearly an artist's interpretation. |
+| **Full Crazy** | Reality broken. Physics gone. Subject still identifiable. |
 
-The only rules that remain active in Chaos Agent mode:
-- The subject is still identifiable in every output.
-- Three outputs are still generated.
-- Every output is still copy-ready.
-
-→ **Full reference:** [Chaos Agent](style_packs/00_chaos_agent.md) — complete rules, behavior, and examples.
-
----
-
-## Pillar 4 — Output Formatting
-
-Defines how final content is structured.
+The three must be immediately distinguishable. If they could be confused, push harder.
 
 ### Output Structure
 
-Each generation produces:
+Every generation produces exactly three windows:
 
-- Three windows:
-  - Realistic
-  - Stylized
-  - Full Crazy
-- Copy‑ready text
-- **450-character limit per prompt body** — no exceptions
-- No commentary
-- No drift
-- Consistent formatting
+```
+**REALISTIC — [Pack Name]**
+Subject: [Subject]
 
-### PDF Workflow
+[Prompt — copy this]
 
-1. Write prompt in Markdown.
-2. Export to PDF.
-3. Use on phone.
+**STYLIZED — [Pack Name]**
+Subject: [Subject]
 
-→ **Full reference:** [Output System Index](output_system/INDEX.md) — variation levels, output structure rules, and production workflows.
+[Prompt — copy this]
 
----
+**FULL CRAZY — [Pack Name]**
+Subject: [Subject]
 
-## Purpose of Core Rules
+[Prompt — copy this]
+```
 
-- Ensure consistency.
-- Prevent drift.
-- Maintain predictable outputs.
-- Support unlimited style expansion.
-- Keep system modular and stable.
+**Rules — all must be true for every generation:**
+1. Always three windows: Realistic, Stylized, Full Crazy.
+2. **450-character limit** per prompt body. No exceptions.
+3. Copy-ready — paste directly into any AI image tool. No placeholders.
+4. No commentary — prompts only, nothing else.
+5. No drift — format, style, and variation behavior are stable across sessions.
 
----
-
-## Future Expansion
-
-- Additional style packs.
-- Text tone library.
-- Favorites system.
-- ~~Super Randomizer Mode.~~ → **Shipped as [Chaos Agent](style_packs/00_chaos_agent.md)**
-- Advanced caption behaviors.
-
----
-
-*This Core Rules Document defines the stable foundation of Prompt Maker v2.0 and supports all future style packs, text systems, and output formats.*
+**Chaos Agent exception:** rules 1 (ordering), 5 (no drift), and format consistency are suspended. Three outputs still produced. 450-char limit still applies. Everything else is random.
