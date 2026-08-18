@@ -77,6 +77,8 @@ Every generation must satisfy ALL of the following:
 4. **No drift** — style, format, and variation behavior are stable across sessions.
 5. **Consistent formatting** — window structure, headers, and ordering never vary.
 
+> **Chaos Agent Exception:** When [Chaos Agent mode](../style_packs/00_chaos_agent.md) is active, rules 1 (ordering), 4 (no drift), and 5 (consistent style/variation) are suspended. Three windows are still produced and every window is still copy-ready.
+
 ---
 
 ## How to Read an Output

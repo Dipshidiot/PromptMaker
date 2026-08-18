@@ -137,6 +137,21 @@ How chaos behaves.
 
 ---
 
+## Pillar 3 Exception — Chaos Agent Mode
+
+**Chaos Agent** is a special override mode that suspends all core rules and randomly selects from every available option across every dimension: style pack, variation level, lighting, color, texture, motion, text style, text texture, and text placement.
+
+To activate: say **"Chaos Agent"** instead of selecting a style pack. No further configuration is needed or accepted.
+
+The only rules that remain active in Chaos Agent mode:
+- The subject is still identifiable in every output.
+- Three outputs are still generated.
+- Every output is still copy-ready.
+
+→ **Full reference:** [Chaos Agent](style_packs/00_chaos_agent.md) — complete rules, behavior, and examples.
+
+---
+
 ## Pillar 4 — Output Formatting
 
 Defines how final content is structured.
@@ -179,7 +194,7 @@ Each generation produces:
 - Additional style packs.
 - Text tone library.
 - Favorites system.
-- Super Randomizer Mode.
+- ~~Super Randomizer Mode.~~ → **Shipped as [Chaos Agent](style_packs/00_chaos_agent.md)**
 - Advanced caption behaviors.
 
 ---

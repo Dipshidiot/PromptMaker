@@ -4,8 +4,13 @@ All style packs follow the [Core Rules Document](../CORE_RULES.md) template and 
 
 ---
 
+> ⚠️ **CHAOS AGENT MODE** — Say *"Chaos Agent"* instead of picking a style pack to suspend all rules and randomize everything. See [Chaos Agent](00_chaos_agent.md).
+
+---
+
 | # | Style Pack | Core Vibe |
 |---|------------|-----------|
+| 00 | [**⚡ Chaos Agent**](00_chaos_agent.md) | All rules suspended — randomly picks from every option across every dimension |
 | 01 | [Meme Lord](01_meme_lord.md) | Viral internet energy, reaction culture, maximum relatability |
 | 02 | [Neon Noir](02_neon_noir.md) | Rain-slicked streets, buzzing neon, cinematic detective melancholy |
 | 03 | [Cottagecore](03_cottagecore.md) | Soft pastoral warmth, wildflowers, handmade comfort |
