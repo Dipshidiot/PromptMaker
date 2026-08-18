@@ -42,5 +42,5 @@ The text is made of liquid glass. Highlights multiply. Reflections cascade. The 
 |-------------|------------|
 | Corporate Parody | Center, Bottom |
 | Vintage Noir | Center |
-| Soft Wholesome | Bottom |
+| Soft Wholesome | Bottom (⚠️ use with intention — gloss can feel too manufactured for soft styles) |
 | Bold Meme Block | Top, Bottom |

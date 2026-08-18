@@ -25,7 +25,9 @@ Text exists without a fixed anchor. It is positioned compositionally — placed 
 | Chaotic Burst styling | Floats everywhere simultaneously |
 | Dark Academia | Floats on pages, scrolls, chalkboards within the image |
 
-**Not eligible for Floating:** Meme Lord, Luxury Brand, Corporate Parody, Retro Vintage (these require structured placement for their aesthetic to work).
+**Style packs not eligible for Floating:** Meme Lord, Luxury Brand, Retro Vintage (these require structured placement for their aesthetic to work).
+
+**Text styles not eligible for Floating:** Corporate Parody (professional precision requires anchored placement — see Style × Placement matrix).
 
 ## Use Cases
 - When the image has natural text-ready surfaces (signs, walls, sky, floors)

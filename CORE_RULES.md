@@ -86,6 +86,8 @@ If **Image + Text** is selected:
 - Text must follow placement rules.
 - No drift.
 
+→ **Full reference:** [Text System Index](text_system/INDEX.md) — all text styles, textures, placements, and compatibility matrices.
+
 ---
 
 ## Pillar 3 — Style Pack System
@@ -131,6 +133,8 @@ How chaos behaves.
 - Full Crazy:
 ```
 
+→ **Full reference:** [Style Packs Index](style_packs/INDEX.md) — all 15 style packs ready to use.
+
 ---
 
 ## Pillar 4 — Output Formatting
@@ -155,6 +159,8 @@ Each generation produces:
 1. Write prompt in Markdown.
 2. Export to PDF.
 3. Use on phone.
+
+→ **Full reference:** [Output System Index](output_system/INDEX.md) — variation levels, output structure rules, and production workflows.
 
 ---
 

@@ -55,7 +55,7 @@ Define *where* the text lives in the image.
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Bold Meme Block** | ✅ | ✅ | ⚠️ | ✅ | ✅ | ✅ |
 | **Soft Wholesome** | ✅ | ✅ | ❌ | ✅ | ⚠️ | ❌ |
-| **Chaotic Burst** | ⚠️ | ✅ | ✅ | ⚠️ | ❌ | ✅ |
+| **Chaotic Burst** | ❌ | ✅ | ✅ | ⚠️ | ❌ | ✅ |
 | **Vintage Noir** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | **Corporate Parody** | ✅ | ❌ | ⚠️ | ❌ | ✅ | ✅ |
 

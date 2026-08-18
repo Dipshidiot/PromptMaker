@@ -30,7 +30,7 @@ All style packs follow the [Core Rules Document](../CORE_RULES.md) template and 
 2. Write your subject following the [Subject Rules](../CORE_RULES.md#1-subject-rules).
 3. Apply the style pack's lighting, color, and texture behavior to your prompt.
 4. Generate all three required variations: **Realistic**, **Stylized**, **Full Crazy**.
-5. Optionally add text using [Pillar 2 rules](../CORE_RULES.md#pillar-2--text-styling--placement).
+5. Optionally add text using the [Text System Index](../text_system/INDEX.md) — full styles, textures, placements, and compatibility matrices.
 
 ---
 
