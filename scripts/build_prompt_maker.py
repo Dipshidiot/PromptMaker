@@ -14,6 +14,8 @@ OUTPUT = REPO_ROOT / "PROMPT_MAKER.md"
 
 
 def read(path: Path) -> str:
+    if not path.exists():
+        raise FileNotFoundError(path)
     return path.read_text(encoding="utf-8").strip() + "\n"
 
 
@@ -43,7 +45,7 @@ def shift_heading_levels(text: str) -> str:
         hashes, title = match.groups()
         return f"{hashes}# {title}"
 
-    return re.sub(r"^(###|##) (.+)$", replace, text, flags=re.MULTILINE)
+    return re.sub(r"^(####|###|##) (.+)$", replace, text, flags=re.MULTILINE)
 
 
 def build_intro(pack_names: list[str]) -> str:
