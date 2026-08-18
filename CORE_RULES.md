@@ -1,6 +1,6 @@
 # Core Rules Document — Prompt Maker v2.0
 
-A stable, universal rule system that governs how every prompt is generated, regardless of style, subject, or text mode.
+A stable, universal rule system that governs how every prompt is generated, regardless of style or subject. Text is included by default unless the user opts out.
 
 ---
 
@@ -45,7 +45,7 @@ Every generation always produces all three variations. The user does not select 
 | **Full Crazy** | Reality broken. Physics gone. Subject still identifiable. Everything else is chaos. |
 
 **User flow:**
-1. User provides: style pack + subject (+ optional text config)
+1. User provides: style pack + subject (+ optional text opt-out or text overrides)
 2. System generates all three variations
 3. User reads the three outputs and copies the one they want
 
@@ -84,10 +84,10 @@ Defines how text behaves across all styles.
 
 ### Text Rule
 
-If **Image + Text** is selected:
+Text is active by default unless the user explicitly asks for **No Text**.
 
 - Text must match style tone.
-- Text must fit subject.
+- Text words must be generated from the subject prompt and fit the subject.
 - Text must follow placement rules.
 - No drift.
 

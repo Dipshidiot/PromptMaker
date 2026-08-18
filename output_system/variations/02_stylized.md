@@ -32,11 +32,12 @@ Ask: *Is the style pack's visual identity fully expressed here?* If a viewer cou
 | Expression/Pose | Natural | Pushed for emphasis |
 | Composition | Documentary | Designed for impact |
 
-## Caption Behavior (if text mode active)
+## Caption Behavior (default unless user opts out)
 - Text may integrate with the image's geometry — following perspective or natural curves
 - A single designed effect is permitted (shadow, outline enhancement, perspective warp)
 - Placement may use the image's natural negative space rather than strict margin rules
 - Caption tone shifts toward the style pack's intended voice
+- Caption wording stays anchored to the subject prompt even when the style gets pushed
 
 ## Style Pack Interaction
 Stylized is where style packs express their full visual identity. This is the signature variation — the one that best represents what the style pack *is*. A Stylized Neon Noir has full color bloom; a Stylized Cottagecore has full painterly warmth.

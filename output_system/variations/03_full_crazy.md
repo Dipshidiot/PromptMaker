@@ -54,11 +54,12 @@ Different style packs produce different *flavors* of Full Crazy:
 | Cosmic Horror | Reality dissolving, impossible geometry, tentacles replacing everything |
 | Dark Academia | The library has become infinite and wrong, books are alive, clocks have too many hands |
 
-## Caption Behavior (if text mode active)
+## Caption Behavior (default unless user opts out)
 - Text may be multiplied, layered, or overlapping
 - Multiple sizes, angles, or colors are permitted
 - Chaos text must remain *technically* legible — the joke only works if it can be read
 - Caption may comment on itself or break the fourth wall
+- Even in chaos, the caption still starts from the subject prompt before being pushed off the rails
 
 ## Example Outputs (by subject type)
 

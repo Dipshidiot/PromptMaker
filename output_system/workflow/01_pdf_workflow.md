@@ -13,11 +13,10 @@ Write your subject and configuration in any Markdown editor. Use the following t
 # Prompt Generation Request
 
 **Style Pack:** [Style Pack Name]
-**Mode:** Image Only / Image + Text
-**Text Style:** [if Image + Text]
-**Text Texture:** [if Image + Text]
-**Text Placement:** [if Image + Text]
-**Caption:** [if Image + Text]
+**Text:** On by default / say No Text to opt out
+**Text Style:** [optional override]
+**Text Texture:** [optional override]
+**Text Placement:** [optional override]
 
 ## Subject
 [Your subject here]
@@ -29,6 +28,8 @@ Write your subject and configuration in any Markdown editor. Use the following t
 ```
 
 > Do not specify a variation level. The system always generates all three — Realistic, Stylized, and Full Crazy — from your input. You choose which one to use after seeing them.
+>
+> Caption wording is generated from the subject and style pack rules unless you explicitly ask for **No Text**.
 
 ### Step 2 — Generate Output
 

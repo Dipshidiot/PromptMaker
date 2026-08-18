@@ -34,7 +34,7 @@ A well-formed copy-ready prompt contains all of the following in natural languag
 5. **Color** — palette, saturation, and mood
 6. **Texture** — surface quality of the image
 7. **Style reference** — the visual aesthetic being applied
-8. **Text instruction** (if Image + Text mode) — font style, placement, and content
+8. **Text instruction** (unless the user opts out) — font style, placement, and content
 
 ## What Does NOT Go Into a Copy-Ready Prompt
 
@@ -51,12 +51,13 @@ A well-formed copy-ready prompt contains all of the following in natural languag
 **✅ Copy-ready:**
 > "Photograph of an exhausted office worker slumped at a cluttered desk, flat fluorescent overhead lighting, slightly washed-out whites, neutral grey background, natural tired expression, wide-angle lens slightly below eye level, no color grading."
 
-## Text Prompt Copy-Readiness (Image + Text Mode)
+## Text Prompt Copy-Readiness (Default Text Behavior)
 
-When a text caption is included, the full prompt must contain:
+Unless the user explicitly asks for **No Text**, the full prompt must contain:
 - The caption text, exactly as it should appear in the image
 - The text style (e.g., "Impact font, all caps, white fill, heavy black outline")
 - The placement (e.g., "centered at the bottom with 5% bottom margin")
 - The texture (e.g., "clean, no grain")
+- Caption wording that clearly comes from the subject prompt and follows the active style pack's caption tone
 
 Everything needed to reproduce the exact output must be in the prompt.

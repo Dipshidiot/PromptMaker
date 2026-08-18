@@ -22,11 +22,12 @@ Camera-first. The subject exists in the real world with believable physics, natu
 ## The Realistic Test
 Ask: *Could this be a photograph?* If yes, it's Realistic. If it requires painterly treatment, artistic choice, or any "pushed" quality, it belongs in Stylized.
 
-## Caption Behavior (if text mode active)
+## Caption Behavior (default unless user opts out)
 - Font renders cleanly with no distortion
 - Text is legible at a glance — no effects that compete with the image
 - Placement follows standard margin rules from [Pillar 2](../../CORE_RULES.md#pillar-2--text-styling--placement)
 - Caption tone matches the subject's actual mood — no ironic distance
+- Caption wording is derived from the subject prompt rather than added arbitrarily
 
 ## Style Pack Interaction
 Each style pack defines its own Realistic behavior. The global rule is: **realistic means the style pack's most grounded, photography-adjacent interpretation**. A Realistic Meme Lord still uses flash lighting and compressed color; a Realistic Ghibli Soft still uses hand-painted warmth — but neither exaggerates beyond what feels plausible.

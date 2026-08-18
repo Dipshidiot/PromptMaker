@@ -99,10 +99,10 @@ Define *where* the text lives in the image.
 
 ## Text Rule (from Core Rules)
 
-When **Image + Text** mode is selected, ALL of the following must be true:
+Text is on by default unless the user explicitly opts out. When text is active, ALL of the following must be true:
 
 1. **Text must match style tone** — use the compatibility matrix.
-2. **Text must fit subject** — the caption should be relevant to the image.
+2. **Text must fit subject** — the caption words should be generated from the subject prompt and stay relevant to the image.
 3. **Text must follow placement rules** — use the placement docs for margin and legibility rules.
 4. **No drift** — once a style/texture/placement combination is chosen, it does not change mid-generation.
 
@@ -114,5 +114,5 @@ When **Image + Text** mode is selected, ALL of the following must be true:
 2. Look up the **Recommended Text Style** in the table above
 3. Choose a **Texture** compatible with that style (compatibility matrix)
 4. Choose a **Placement** appropriate to your caption type
-5. Write your caption following the **Caption Tone** guidelines in the style pack
+5. Generate the caption wording from the subject prompt, following the **Caption Tone** guidelines in the style pack
 6. Apply across all three variation levels: Realistic → Stylized → Full Crazy

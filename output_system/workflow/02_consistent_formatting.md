@@ -43,8 +43,8 @@ Subject: [Subject]
 [Prompt text]
 ```
 
-### Text Mode Addition (Image + Text)
-When Image + Text mode is active, append to the label:
+### Default Text Addition
+When text has not been opted out, append to the label:
 ```
 Text: [Caption text] | [Style] | [Texture] | [Placement]
 ```
