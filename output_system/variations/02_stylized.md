@@ -1,23 +1,26 @@
 # VARIATION LEVEL: Stylized
 
 ## Identity
-Enhanced, expressive, intentionally artistic. The subject is real but the world around it is pushed — lighting is more dramatic, colors are richer, textures are more pronounced. Stylized occupies the space between documentary and illustration. It is the artist's interpretation rather than the camera's record.
+The artist's interpretation. The subject is real but every visual element is pushed with deliberate intent — lighting is more dramatic, palette is richer, texture has visible character. Stylized is clearly not a photograph and clearly not chaos. It is the style pack expressing its full voice on purpose. The gap between Realistic and Stylized must be immediately visible.
 
 ## Output Rules
 
 | Property | Value |
 |----------|-------|
-| **Tone** | Heightened, intentional, curated |
-| **Lighting** | Motivated and dramatic — style pack defines behavior |
-| **Color** | Pushed toward the style pack's palette; saturation increased |
-| **Texture** | Visible stylistic texture — grain, paint, gloss, etc. |
-| **Exaggeration** | Moderate — up to 30% beyond realistic baseline |
-| **Mood** | Amplified from subject; emotion is the priority |
+| **Tone** | Heightened, intentional, curated — unmistakably art |
+| **Lighting** | Motivated and dramatic — color-tinted, directional, mood-driven |
+| **Color** | Palette pushed hard toward the style pack's identity |
+| **Texture** | Visible stylistic surface — paint, grain, gloss, ink, whatever the pack dictates |
+| **Exaggeration** | Moderate but clear — composition, expression, and color all serve the style |
+| **Mood** | Amplified from subject; the emotion is the point |
 
 ## What Stylized Does NOT Mean
-- Chaotic — stylization is controlled and intentional, not random
-- Cartoonish — unless the style pack calls for it specifically
-- A different subject — the subject from the prompt remains unchanged
+- Chaotic — stylization is controlled and intentional, never random
+- Cartoonish — unless the style pack specifically calls for it
+- A different subject — the subject from the prompt does not change
+
+## The Stylized Test
+Ask: *Is the style pack's visual identity fully expressed here?* If a viewer could identify the style pack from the image alone without being told, it's Stylized. If it could still pass as a photograph, push harder.
 
 ## Stylized vs. Realistic: Key Differences
 
@@ -33,7 +36,7 @@ Enhanced, expressive, intentionally artistic. The subject is real but the world 
 - Text may integrate with the image's geometry — following perspective or natural curves
 - A single designed effect is permitted (shadow, outline enhancement, perspective warp)
 - Placement may use the image's natural negative space rather than strict margin rules
-- Caption tone shifts slightly toward style pack's intended voice
+- Caption tone shifts toward the style pack's intended voice
 
 ## Style Pack Interaction
 Stylized is where style packs express their full visual identity. This is the signature variation — the one that best represents what the style pack *is*. A Stylized Neon Noir has full color bloom; a Stylized Cottagecore has full painterly warmth.

@@ -40,11 +40,11 @@ Every prompt must generate three variations:
 
 | Variation | Description |
 |-----------|-------------|
-| **Realistic** | Grounded, photographic, natural. |
-| **Stylized** | Enhanced, expressive, artistic. |
-| **Full Crazy** | Exaggerated, viral, chaotic. |
+| **Realistic** | Camera-first. Photographic, natural, zero artistic embellishment. Could be a photograph. |
+| **Stylized** | Artist's interpretation. Style pack at full voice — visually distinct from Realistic, clearly intentional. |
+| **Full Crazy** | Reality broken. Physics gone. Subject still identifiable. Everything else is chaos. |
 
-These three levels are required for every output.
+The three levels must be clearly, immediately distinguishable from each other. A viewer should never confuse Realistic with Stylized, or Stylized with Full Crazy.
 
 ---
 
@@ -165,6 +165,7 @@ Each generation produces:
   - Stylized
   - Full Crazy
 - Copy‑ready text
+- **450-character limit per prompt body** — no exceptions
 - No commentary
 - No drift
 - Consistent formatting

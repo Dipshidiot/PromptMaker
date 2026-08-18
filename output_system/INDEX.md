@@ -72,12 +72,14 @@ Subject: [Subject]
 Every generation must satisfy ALL of the following:
 
 1. **Three windows** — Realistic, Stylized, Full Crazy. Always all three.
-2. **Copy-ready** — every window is immediately usable with no editing.
-3. **No commentary** — output is prompts only. Nothing else.
-4. **No drift** — style, format, and variation behavior are stable across sessions.
-5. **Consistent formatting** — window structure, headers, and ordering never vary.
+2. **450-character limit** — every prompt body is 450 characters or fewer. No exceptions.
+3. **Copy-ready** — every window is immediately usable with no editing.
+4. **No commentary** — output is prompts only. Nothing else.
+5. **No drift** — style, format, and variation behavior are stable across sessions.
+6. **Consistent formatting** — window structure, headers, and ordering never vary.
+7. **Visible distinction** — Realistic, Stylized, and Full Crazy must be immediately distinguishable from each other. If they could be confused, push harder.
 
-> **Chaos Agent Exception:** When [Chaos Agent mode](../style_packs/00_chaos_agent.md) is active, rules 1 (ordering), 4 (no drift), and 5 (consistent style/variation) are suspended. Three windows are still produced and every window is still copy-ready.
+> **Chaos Agent Exception:** When [Chaos Agent mode](../style_packs/00_chaos_agent.md) is active, rules 1 (ordering), 5 (no drift), and 6 (consistent style/variation) are suspended. Three windows are still produced, every window is still copy-ready, and the 450-character limit still applies.
 
 ---
 

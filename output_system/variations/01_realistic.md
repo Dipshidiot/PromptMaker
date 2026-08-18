@@ -1,23 +1,26 @@
 # VARIATION LEVEL: Realistic
 
 ## Identity
-Grounded in photographic reality. The subject exists in the real world — natural light, plausible physics, believable textures. No exaggeration, no surrealism. The output should feel like something that could have been captured by a camera or painted with documentary intent.
+Camera-first. The subject exists in the real world with believable physics, natural light, and zero artistic embellishment. If a camera could have shot it, it belongs here. If it requires an artist's interpretation, it doesn't. This is the grounded baseline — the other two variations push away from this.
 
 ## Output Rules
 
 | Property | Value |
 |----------|-------|
-| **Tone** | Naturalistic, grounded, authentic |
-| **Lighting** | Natural or studio-plausible light sources only |
-| **Color** | True-to-life palette; no unnatural saturation |
-| **Texture** | Photographic surface detail — skin, fabric, material |
-| **Exaggeration** | None. Physical laws apply. |
-| **Mood** | Drawn from subject; not amplified |
+| **Tone** | Documentary, naturalistic, unmanipulated |
+| **Lighting** | Real-world sources only — sun, overcast sky, practical indoor light |
+| **Color** | True-to-life; no color grading, no saturation boost |
+| **Texture** | Photographic surface detail only — what a camera would capture |
+| **Exaggeration** | Zero. None. Physical laws apply completely. |
+| **Mood** | Present in the subject; not amplified or commented on |
 
 ## What Realistic Does NOT Mean
-- Boring or flat — realism can be cinematic and compelling
-- Unlit — realistic lighting can be dramatic and beautiful
-- Emotionless — authentic human moments carry full emotional weight
+- Boring — cinematic photography is still realistic
+- Unlit — natural and practical lighting can be dramatic
+- Emotionless — authentic moments carry full weight without exaggeration
+
+## The Realistic Test
+Ask: *Could this be a photograph?* If yes, it's Realistic. If it requires painterly treatment, artistic choice, or any "pushed" quality, it belongs in Stylized.
 
 ## Caption Behavior (if text mode active)
 - Font renders cleanly with no distortion

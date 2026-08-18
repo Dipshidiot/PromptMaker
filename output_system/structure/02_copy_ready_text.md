@@ -7,11 +7,21 @@ Every window produced by Prompt Maker is **copy-ready**: it can be selected, cop
 
 | Requirement | Description |
 |-------------|-------------|
+| **450-character limit** | Every prompt body must be 450 characters or fewer. Count every character including spaces and punctuation. No exceptions. |
 | **Complete** | The prompt contains everything needed — subject, style, lighting, texture, mood |
 | **No placeholders** | No `[X]`, `(optional)`, or `fill in` text |
 | **No meta-commentary** | No notes explaining the prompt to the user |
 | **No conditional language** | No "if you want X, add Y" inside the prompt |
 | **Immediately usable** | Paste → generate. No intermediate step. |
+
+### The 450-Character Rule
+
+Prompt bodies are capped at **450 characters** (not words — characters). This keeps prompts tight, scannable on a phone screen, and fast to copy.
+
+- Count starts after the `Subject:` line, on the first line of prompt body text.
+- Count ends at the closing `---`.
+- If a prompt exceeds 450 characters, cut until it fits. Prioritize: subject → lighting → color → texture. Drop anything redundant.
+- Do not sacrifice the essential style identity to hit the limit — cut filler words, not core descriptors.
 
 ## What Goes INTO a Copy-Ready Prompt
 
