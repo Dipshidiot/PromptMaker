@@ -90,7 +90,7 @@ When active:
 Style packs are modular. Each defines: aesthetic, lighting, color, texture, motion, caption tone, and transformation rules for all three variation levels.
 
 **Available packs:** Meme Lord · Neon Noir · Ghibli Soft · Cyberpunk Chrome · Cosmic Wonder  
-**Special mode:** [Chaos Agent](style_packs/00_chaos_agent.md) — suspends all rules, randomizes everything.
+**Special mode:** [Chaos Agent](style_packs/00_chaos_agent.md) — remixes style behavior aggressively while still obeying safety, policy, and core output rules.
 
 <!-- build:strip-start -->
 To add a new pack: copy [STYLE_PACK_TEMPLATE.md](STYLE_PACK_TEMPLATE.md), fill in all sections, drop in `style_packs/`.
@@ -138,4 +138,4 @@ Subject: [Subject]
 4. No commentary — prompts only, nothing else.
 5. No drift — format, style, and variation behavior are stable across sessions.
 
-**Chaos Agent exception:** rules 1 (ordering), 5 (no drift), and format consistency are suspended. Three outputs still produced. 450-char limit still applies. Everything else is random.
+**Chaos Agent exception:** variation ordering and strict no-drift behavior may loosen for stylistic surprise, but three outputs, copy-ready formatting, the 450-character limit, and all safety/policy constraints always remain active.

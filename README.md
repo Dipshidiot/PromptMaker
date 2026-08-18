@@ -15,7 +15,7 @@ A prompt creator for creators.
 | Ghibli Soft | Warm, painterly, wonder-soaked, emotional |
 | Cyberpunk Chrome | Machine-future, chrome, electric, hard-edged |
 | Cosmic Wonder | Celestial, luminous, awe-filled, dreamlike |
-| Chaos Agent | All rules suspended. Everything random. |
+| Chaos Agent | Wild style collisions, but still safe and policy-compliant |
 
 ## For Developers
 
