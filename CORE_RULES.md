@@ -92,7 +92,9 @@ Style packs are modular. Each defines: aesthetic, lighting, color, texture, moti
 **Available packs:** Meme Lord · Neon Noir · Ghibli Soft · Cyberpunk Chrome · Cosmic Horror  
 **Special mode:** [Chaos Agent](style_packs/00_chaos_agent.md) — suspends all rules, randomizes everything.
 
+<!-- build:strip-start -->
 To add a new pack: copy [STYLE_PACK_TEMPLATE.md](STYLE_PACK_TEMPLATE.md), fill in all sections, drop in `style_packs/`.
+<!-- build:strip-end -->
 
 ---
 

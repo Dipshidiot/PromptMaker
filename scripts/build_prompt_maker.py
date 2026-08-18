@@ -7,6 +7,9 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 CORE_RULES = REPO_ROOT / "CORE_RULES.md"
 STYLE_PACKS_DIR = REPO_ROOT / "style_packs"
 CHAOS_FILE = "00_chaos_agent.md"
+CORE_RULES_START_MARKER = "## Pillar 1"
+STRIP_BLOCK_START = "<!-- build:strip-start -->"
+STRIP_BLOCK_END = "<!-- build:strip-end -->"
 OUTPUT = REPO_ROOT / "PROMPT_MAKER.md"
 
 
@@ -65,19 +68,21 @@ def build_core_rules() -> str:
 
     text = read(CORE_RULES)
     lines = text.splitlines()
-    start = next((i for i, line in enumerate(lines) if line.startswith("## Pillar 1")), None)
+    start = next((i for i, line in enumerate(lines) if line.startswith(CORE_RULES_START_MARKER)), None)
     if start is None:
-        raise ValueError(f"Could not find '## Pillar 1' in {CORE_RULES}")
+        raise ValueError(f"Could not find {CORE_RULES_START_MARKER!r} in {CORE_RULES}")
+
     selected = "\n".join(lines[start:])
     selected = re.sub(
-        r"\nTo add a new pack:.*?(?=\n---\n)",
+        rf"\n{re.escape(STRIP_BLOCK_START)}.*?{re.escape(STRIP_BLOCK_END)}\n",
         "\n",
         selected,
         flags=re.DOTALL,
     )
-    selected = selected.replace(
-        "**Special mode:** [Chaos Agent](style_packs/00_chaos_agent.md) — suspends all rules, randomizes everything.",
-        "**Special mode:** Chaos Agent — suspends all rules, randomizes everything.",
+    selected = re.sub(
+        r"(\*\*Special mode:\*\* )\[([^\]]+)\]\([^)]+\)",
+        r"\1\2",
+        selected,
     )
     return "\n".join(["# CORE RULES", "", selected.strip()])
 
