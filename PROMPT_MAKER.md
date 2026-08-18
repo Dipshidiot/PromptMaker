@@ -12,7 +12,7 @@ Load this single file into your AI tool. Everything is here. You can switch styl
 4. Copy the one you want. Paste. Generate.
 5. Switch packs any time: just say the new pack name.
 
-**Available packs:** Meme Lord · Neon Noir · Ghibli Soft · Cyberpunk Chrome · Cosmic Horror · Chaos Agent
+**Available packs:** Meme Lord · Neon Noir · Ghibli Soft · Cyberpunk Chrome · Cosmic Wonder · Chaos Agent
 
 ---
 
@@ -95,7 +95,7 @@ When active:
 | Neon Noir | Vintage Noir | — |
 | Ghibli Soft | Soft Wholesome | — |
 | Cyberpunk Chrome | Corporate Parody | Chaotic Burst |
-| Cosmic Horror | Vintage Noir | Chaotic Burst |
+| Cosmic Wonder | Vintage Noir | Chaotic Burst |
 
 ---
 
@@ -103,7 +103,7 @@ When active:
 
 Style packs are modular. Each defines: aesthetic, lighting, color, texture, motion, caption tone, and transformation rules for all three variation levels.
 
-**Available packs:** Meme Lord · Neon Noir · Ghibli Soft · Cyberpunk Chrome · Cosmic Horror  
+**Available packs:** Meme Lord · Neon Noir · Ghibli Soft · Cyberpunk Chrome · Cosmic Wonder  
 **Special mode:** Chaos Agent — suspends all rules, randomizes everything.
 
 
@@ -301,40 +301,40 @@ Total sensory overload. HUD elements from six systems overlay the entire image. 
 
 ---
 
-## PACK 5 — Cosmic Horror
+## PACK 5 — Cosmic Wonder
 
 ### Core Aesthetic
-The beautiful terror of a universe that is vast, indifferent, and full of things that should not exist. Inspired by Lovecraftian horror, deep-sea biology, and the specific dread of looking at something your brain cannot fully process. Sublime, disturbing, and genuinely awe-inspiring.
+The awe of a universe that feels vast, luminous, and alive with possibility. Inspired by nebula photography, stargazing, auroras, and the wonder of deep space. Expansive, radiant, and emotionally transporting.
 
 ### Lighting Behavior
-Bioluminescent glow from non-standard sources — the thing itself may emit light. Cold deep-ocean blue-black as the dominant base. Pale greenish-white or bruised purple from alien or organic sources. Dramatic underlighting suggests something rising from below. Natural light is absent or wrong.
+Soft celestial glow from stars, nebulae, moons, and atmospheric light. Deep midnight blue and indigo act as the base, with pale cyan, lavender, and gold highlights. Light blooms gently across edges and reflective surfaces. Everything feels illuminated by the sky itself.
 
 ### Color Behavior
-Deep ocean black and midnight blue as base. Bioluminescent accents: pale cyan, sickly green, bruised purple. Skin and organic tones are wrong — too pale, too wet, slightly the wrong color. Nothing is warm here except the things that should not be warm.
+Midnight blue, deep violet, aurora cyan, soft magenta, silver, and starlight gold. Colors feel luminous rather than harsh. Dark values create scale; bright accents create wonder. Warm highlights appear as gentle points of life within the cool palette.
 
 ### Texture Behavior
-Wet, organic, chitinous. Bioluminescent organs, translucent skin, iridescent scales, membrane-thin tissue. Stone that is slightly too smooth. Tentacles. Always tentacles. Surfaces that suggest depth that should not be there.
+Fine star-field grain, luminous dust, smooth glassy reflections, crystalline shimmer, and soft atmospheric haze. Surfaces may sparkle, glow, or refract light like ice, mist, or polished stone. The world feels expansive, clean, and touchable.
 
 ### Motion Behavior
-Slow, non-Euclidean. Things that are far away are also close. Movement that should not be biologically possible, but is. Tentacles move in directions that don't quite match each other. Stars in the background slowly rearrange into a shape.
+Slow, graceful, and dreamlike. Stardust drifts. Nebula clouds curl gently. Light trails arc softly across the scene. Celestial motion feels serene and enormous, like time moving at a cosmic scale.
 
 ### Caption Tone
-Fragment-like, unsettling, slightly wrong. Reads like something almost translated correctly. Creates dread through implication.
+Quietly awestruck, poetic, and expansive. Feels like a line written after looking up for too long and loving what you found. Short, luminous, and reflective.
 
-- "It has always been here."
-- "The geometry was fine before you looked at it."
-- "We named it. That was our first mistake."
+- "The sky kept opening."
+- "Everything looked small in the best way."
+- "It felt like the universe was in a generous mood."
 
 ### Transformation Rules
 
 #### Realistic
-Photorealistic cosmic horror — rendered with biological accuracy that makes it worse. The thing is real. The environment is real. The lighting is correct. That is the problem.
+Photographic cosmic wonder — real night skies, practical atmospheric effects, believable landscapes, and luminous celestial detail. The scale feels humbling but welcoming.
 
 #### Stylized
-Illustrated horror — bold, painterly, striking. Ink and watercolor. The horror is visible but rendered beautifully, which is its own kind of dread. Feels like a cover illustration for a very serious book.
+Painterly cosmic illustration — bold color gradients, radiant skies, drifting light, and stylized stars. Feels like a premium sci-fi book cover or dreamlike travel poster for the universe.
 
 #### Full Crazy
-Reality fully dissolved. Multiple entities overlap. The geometry of the space is impossible. Things are their own shadows. Eyes where there should not be eyes. The sky is a membrane and something is pressing through it.
+Full celestial spectacle. Aurora rivers cross the sky, constellations bloom like architecture, moons stack on the horizon, stardust swirls through the air, and every surface reflects impossible beauty while staying uplifting and readable.
 
 ---
 
