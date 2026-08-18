@@ -24,7 +24,7 @@ Source of truth lives in the modular files:
 - Core rules: [CORE_RULES.md](CORE_RULES.md)
 - Individual pack files: [`style_packs/`](style_packs/)
 - Blank template: [STYLE_PACK_TEMPLATE.md](STYLE_PACK_TEMPLATE.md)
-- Generator: [`/home/runner/work/PromptMaker/PromptMaker/scripts/build_prompt_maker.py`](/home/runner/work/PromptMaker/PromptMaker/scripts/build_prompt_maker.py)
+- Generator: [`scripts/build_prompt_maker.py`](scripts/build_prompt_maker.py)
 
 Regenerate the shipping file with:
 
