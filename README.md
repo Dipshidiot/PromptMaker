@@ -17,8 +17,19 @@ A prompt creator for creators.
 | Cosmic Horror | Reality-bending, eldritch, beautiful dread |
 | Chaos Agent | All rules suspended. Everything random. |
 
-## For Developers / Adding New Packs
+## For Developers
 
+Source of truth lives in the modular files:
+
+- Core rules: [CORE_RULES.md](CORE_RULES.md)
 - Individual pack files: [`style_packs/`](style_packs/)
 - Blank template: [STYLE_PACK_TEMPLATE.md](STYLE_PACK_TEMPLATE.md)
-- Full rule reference: [CORE_RULES.md](CORE_RULES.md)
+- Generator: [`/home/runner/work/PromptMaker/PromptMaker/scripts/build_prompt_maker.py`](/home/runner/work/PromptMaker/PromptMaker/scripts/build_prompt_maker.py)
+
+Regenerate the shipping file with:
+
+```bash
+python /home/runner/work/PromptMaker/PromptMaker/scripts/build_prompt_maker.py
+```
+
+`PROMPT_MAKER.md` is generated from those source files and should not be hand-edited.
