@@ -60,9 +60,14 @@ def build_intro(pack_names: list[str]) -> str:
 
 
 def build_core_rules() -> str:
+    if not CORE_RULES.exists():
+        raise FileNotFoundError(CORE_RULES)
+
     text = read(CORE_RULES)
     lines = text.splitlines()
-    start = next(i for i, line in enumerate(lines) if line.startswith("## Pillar 1"))
+    start = next((i for i, line in enumerate(lines) if line.startswith("## Pillar 1")), None)
+    if start is None:
+        raise ValueError(f"Could not find '## Pillar 1' in {CORE_RULES}")
     selected = "\n".join(lines[start:])
     selected = re.sub(
         r"\nTo add a new pack:.*?(?=\n---\n)",
