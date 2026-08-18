@@ -24,6 +24,13 @@ def extract_style_pack_name(text: str) -> str:
     return match.group(1).strip()
 
 
+def extract_pack_number(path: Path) -> int:
+    match = re.match(r"(\d+)_", path.name)
+    if not match:
+        raise ValueError(f"Missing numeric prefix in {path}")
+    return int(match.group(1))
+
+
 def trim_example_outputs(text: str) -> str:
     marker = "\n## Example Outputs\n"
     if marker in text:
@@ -74,7 +81,7 @@ def build_core_rules() -> str:
 
     selected = "\n".join(lines[start:])
     selected = re.sub(
-        rf"\n{re.escape(STRIP_BLOCK_START)}.*?{re.escape(STRIP_BLOCK_END)}\n",
+        rf"\n?{re.escape(STRIP_BLOCK_START)}.*?{re.escape(STRIP_BLOCK_END)}\n?",
         "\n",
         selected,
         flags=re.DOTALL,
@@ -87,12 +94,10 @@ def build_core_rules() -> str:
     return "\n".join(["# CORE RULES", "", selected.strip()])
 
 
-def build_pack_section(index: int, path: Path) -> str:
-    text = trim_example_outputs(read(path))
-    name = extract_style_pack_name(text)
+def build_pack_section(pack_number: int, name: str, text: str) -> str:
     body = re.sub(r"^# STYLE PACK: .+\n?", "", text, count=1, flags=re.MULTILINE).strip()
     body = shift_heading_levels(body)
-    return f"## PACK {index} — {name}\n\n{body}"
+    return f"## PACK {pack_number} — {name}\n\n{body}"
 
 
 def build_chaos_section(path: Path) -> str:
@@ -102,15 +107,20 @@ def build_chaos_section(path: Path) -> str:
 
 
 def main() -> None:
-    pack_paths = sorted(STYLE_PACKS_DIR.glob("*.md"))
-    normal_paths = [path for path in pack_paths if path.name != CHAOS_FILE]
+    pack_entries: list[tuple[int, str, str]] = []
+    for path in sorted(STYLE_PACKS_DIR.glob("*.md")):
+        if path.name == CHAOS_FILE:
+            continue
+        text = trim_example_outputs(read(path))
+        pack_entries.append((extract_pack_number(path), extract_style_pack_name(text), text))
+
     chaos_path = STYLE_PACKS_DIR / CHAOS_FILE
     if not chaos_path.exists():
         raise FileNotFoundError(chaos_path)
 
-    pack_names = [extract_style_pack_name(read(path)) for path in normal_paths]
-    sections = [build_intro(pack_names), build_core_rules(), "# STYLE PACKS"]
-    sections.extend(build_pack_section(index, path) for index, path in enumerate(normal_paths, start=1))
+    pack_entries.sort(key=lambda entry: entry[0])
+    sections = [build_intro([name for _, name, _ in pack_entries]), build_core_rules(), "# STYLE PACKS"]
+    sections.extend(build_pack_section(pack_number, name, text) for pack_number, name, text in pack_entries)
     sections.append(build_chaos_section(chaos_path))
 
     output = "\n\n---\n\n".join(section.strip() for section in sections if section.strip()) + "\n"
