@@ -42,27 +42,27 @@ Production paths for using Prompt Maker output in the real world.
 
 ## The Three-Window Format (Quick Reference)
 
+Labels are displayed above each block. The copy block contains the prompt only.
+
+**REALISTIC — [Style Pack Name]**
+Subject: [Subject]
+
 ```
----
-REALISTIC — [Style Pack Name]
+[Prompt text — copy this]
+```
+
+**STYLIZED — [Style Pack Name]**
 Subject: [Subject]
 
-[Prompt text]
----
+```
+[Prompt text — copy this]
+```
 
----
-STYLIZED — [Style Pack Name]
+**FULL CRAZY — [Style Pack Name]**
 Subject: [Subject]
 
-[Prompt text]
----
-
----
-FULL CRAZY — [Style Pack Name]
-Subject: [Subject]
-
-[Prompt text]
----
+```
+[Prompt text — copy this]
 ```
 
 ---

@@ -5,59 +5,58 @@ Consistent formatting means every output looks the same. Same window structure, 
 
 ## The Formatting Spec
 
-### Window Separators
-Each window is bounded by triple dashes:
-```
----
-[window content]
----
-```
+### Window Structure
 
-### Window Header Format
+Each window has two parts:
+
+**1. Label** — displayed above the copy block. Never copied.
 ```
 [VARIATION LEVEL IN CAPS] — [Style Pack Name in Title Case]
 Subject: [Subject line]
 ```
 
-### Full Three-Window Block
+**2. Prompt block** — the copy target. Contains only the image prompt.
 ```
----
-REALISTIC — [Style Pack Name]
+[Prompt text only — no headers, no subject line, no labels]
+```
+
+### Full Three-Window Block
+
+**REALISTIC — [Style Pack Name]**
 Subject: [Subject]
 
+```
 [Prompt text]
----
+```
 
----
-STYLIZED — [Style Pack Name]
+**STYLIZED — [Style Pack Name]**
 Subject: [Subject]
 
+```
 [Prompt text]
----
+```
 
----
-FULL CRAZY — [Style Pack Name]
+**FULL CRAZY — [Style Pack Name]**
 Subject: [Subject]
 
+```
 [Prompt text]
----
 ```
 
 ### Text Mode Addition (Image + Text)
-When Image + Text mode is active, append to each window header:
+When Image + Text mode is active, append to the label:
 ```
 Text: [Caption text] | [Style] | [Texture] | [Placement]
 ```
 
 Full example:
-```
----
-REALISTIC — Meme Lord
+
+**REALISTIC — Meme Lord**
 Subject: Tired office worker at a desk
 Text: "WHEN IT'S ONLY TUESDAY" | Bold Meme Block | Clean | Split
 
+```
 [Prompt text with text instructions embedded]
----
 ```
 
 ## Formatting Rules
@@ -65,12 +64,11 @@ Text: "WHEN IT'S ONLY TUESDAY" | Bold Meme Block | Clean | Split
 | Rule | Requirement |
 |------|-------------|
 | **Ordering** | Always Realistic → Stylized → Full Crazy |
-| **Separators** | Triple dashes (`---`) before and after each window |
-| **Header caps** | Variation level is ALWAYS ALL CAPS |
-| **Style pack name** | Always Title Case |
-| **Subject line** | Always present, always matches user input verbatim |
-| **Blank line** | One blank line between header block and prompt body |
-| **No trailing text** | Nothing after the final `---` |
+| **Label caps** | Variation level is ALWAYS ALL CAPS |
+| **Style pack name** | Always Title Case in label |
+| **Subject line** | Always present in label, always matches user input verbatim |
+| **Prompt block** | Contains image prompt text only — no headers, no subject, no labels |
+| **Nothing in the block but the prompt** | Variation name, style pack, and subject are NEVER inside the copy block |
 
 ## Why Formatting Consistency Matters
 
