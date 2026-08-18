@@ -81,7 +81,7 @@ When active:
 | Neon Noir | Vintage Noir | — |
 | Ghibli Soft | Soft Wholesome | — |
 | Cyberpunk Chrome | Corporate Parody | Chaotic Burst |
-| Cosmic Horror | Vintage Noir | Chaotic Burst |
+| Cosmic Wonder | Vintage Noir | Chaotic Burst |
 
 ---
 
@@ -89,7 +89,7 @@ When active:
 
 Style packs are modular. Each defines: aesthetic, lighting, color, texture, motion, caption tone, and transformation rules for all three variation levels.
 
-**Available packs:** Meme Lord · Neon Noir · Ghibli Soft · Cyberpunk Chrome · Cosmic Horror  
+**Available packs:** Meme Lord · Neon Noir · Ghibli Soft · Cyberpunk Chrome · Cosmic Wonder  
 **Special mode:** [Chaos Agent](style_packs/00_chaos_agent.md) — suspends all rules, randomizes everything.
 
 <!-- build:strip-start -->

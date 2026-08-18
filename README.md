@@ -14,7 +14,7 @@ A prompt creator for creators.
 | Neon Noir | Dark, cinematic, glowing edges, rain-soaked |
 | Ghibli Soft | Warm, painterly, wonder-soaked, emotional |
 | Cyberpunk Chrome | Machine-future, chrome, electric, hard-edged |
-| Cosmic Horror | Reality-bending, eldritch, beautiful dread |
+| Cosmic Wonder | Celestial, luminous, awe-filled, dreamlike |
 | Chaos Agent | All rules suspended. Everything random. |
 
 ## For Developers

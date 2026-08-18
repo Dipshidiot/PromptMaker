@@ -55,8 +55,8 @@ Say **"Chaos Agent"** instead of choosing a style pack. Describe your subject. A
 **Output 2** (Realistic × Ghibli Soft):
 > Hand-painted golden retriever at a sunlit garden table, warm amber light through leaves, a small birthday cake with one candle glowing warmly, rich greens and dusty rose palette, the dog appears genuinely moved by the occasion.
 
-**Output 3** (Stylized × Cosmic Horror collision):
-> Watercolor-painted golden retriever surrounded by birthday balloons that are slowly becoming eyes, the picnic blanket extends in a direction that is not a direction, bioluminescent cake, the dog is happy and so is the thing behind the dog.
+**Output 3** (Stylized × Cosmic Wonder collision):
+> Watercolor-painted golden retriever under a sky full of aurora ribbons and floating lantern-stars, glowing birthday cake, shimmering picnic blanket, soft indigo and gold palette, the whole scene feels gently magical and celebratory.
 
 ---
 
