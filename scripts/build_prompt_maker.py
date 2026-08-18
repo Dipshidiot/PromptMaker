@@ -6,6 +6,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 CORE_RULES = REPO_ROOT / "CORE_RULES.md"
 STYLE_PACKS_DIR = REPO_ROOT / "style_packs"
+CHAOS_FILE = "00_chaos_agent.md"
 OUTPUT = REPO_ROOT / "PROMPT_MAKER.md"
 
 
@@ -62,15 +63,18 @@ def build_core_rules() -> str:
     text = read(CORE_RULES)
     lines = text.splitlines()
     start = next(i for i, line in enumerate(lines) if line.startswith("## Pillar 1"))
-    selected = lines[start:]
-    filtered: list[str] = []
-    for line in selected:
-        if line.startswith("To add a new pack:"):
-            continue
-        if line.startswith("**Special mode:**"):
-            line = "**Special mode:** Chaos Agent — suspends all rules, randomizes everything."
-        filtered.append(line)
-    return "\n".join(["# CORE RULES", "", *filtered]).strip()
+    selected = "\n".join(lines[start:])
+    selected = re.sub(
+        r"\nTo add a new pack:.*?(?=\n---\n)",
+        "\n",
+        selected,
+        flags=re.DOTALL,
+    )
+    selected = selected.replace(
+        "**Special mode:** [Chaos Agent](style_packs/00_chaos_agent.md) — suspends all rules, randomizes everything.",
+        "**Special mode:** Chaos Agent — suspends all rules, randomizes everything.",
+    )
+    return "\n".join(["# CORE RULES", "", selected.strip()])
 
 
 def build_pack_section(index: int, path: Path) -> str:
@@ -89,8 +93,8 @@ def build_chaos_section(path: Path) -> str:
 
 def main() -> None:
     pack_paths = sorted(STYLE_PACKS_DIR.glob("*.md"))
-    normal_paths = [path for path in pack_paths if path.name != "00_chaos_agent.md"]
-    chaos_path = STYLE_PACKS_DIR / "00_chaos_agent.md"
+    normal_paths = [path for path in pack_paths if path.name != CHAOS_FILE]
+    chaos_path = STYLE_PACKS_DIR / CHAOS_FILE
     if not chaos_path.exists():
         raise FileNotFoundError(chaos_path)
 
